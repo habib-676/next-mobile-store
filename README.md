@@ -1,6 +1,6 @@
 # Next Mobile App – Latest Smartphones Showcase
 
-![Live site](https://next-mobile-app.vercel.app/)
+🌐 **Live Demo:** [Next Mobile App](https://next-mobile-app.vercel.app/)
 
 **Next Mobile App** is a modern **Next.js 15** application designed to showcase the latest smartphones. Users can explore product highlights, view detailed specifications, and, after authentication, add new products to the catalog. This project demonstrates **public and protected routes, authentication with NextAuth.js, and a responsive modern UI using Tailwind CSS**.
 
