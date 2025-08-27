@@ -26,7 +26,7 @@ export default async function productDetails({ params }) {
           </h1>
           <p className="">{product.series}</p>
 
-          <div className="mt-4 space-y-2 ">
+          <div className="mt-4 space-y-2 text-gray-700">
             <p>
               <strong>Release Year:</strong> {product.release_year}
             </p>
