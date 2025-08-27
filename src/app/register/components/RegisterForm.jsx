@@ -12,54 +12,55 @@ export default function RegisterForm() {
     await registerUser({ name, email, password });
   };
   return (
-    <form onSubmit={handleSubmit} className="w-full max-w-md space-y-8 mx-auto">
-      <label className="form-control w-full">
-        <div className="label w-full">
-          <span className="label-text  font-bold">Name</span>
-        </div>
-        <input
-          type="text"
-          placeholder="Type here"
-          className="input input-bordered w-full"
-          name="name"
-        />
-      </label>
-      <label className="form-control w-full">
-        <div className="label w-full">
-          <span className="label-text  font-bold">Email</span>
-        </div>
-        <input
-          type="text"
-          name="email"
-          placeholder="Type here"
-          className="input input-bordered w-full"
-        />
-      </label>
-      <label className="form-control w-full">
-        <div className="label w-full">
-          <span className="label-text font-bold">Password</span>
-        </div>
-        <input
-          type="password"
-          name="password"
-          placeholder="Type here"
-          className="input input-bordered w-full"
-        />
-      </label>
-      <button className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-3xl mt-6 font-bold">
-        Sign Up
-      </button>
-      <p className="text-center">Or Sign In with</p>
-      {/* <SocialLogin /> */}
-      <p className="text-center">
-        Don't Have an account?{" "}
-        <Link
-          href="/login"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-bold"
-        >
-          Login
-        </Link>
-      </p>
-    </form>
+    <div className="flex items-center justify-center min-h-screen bg-base-100">
+      <div className="w-full max-w-md p-8 rounded-2xl shadow-lg bg-base-200">
+        <h2 className="text-2xl font-bold text-center mb-6">Create Account</h2>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <label className="block">
+            <span className="label-text font-semibold">Name</span>
+            <input
+              type="text"
+              name="name"
+              placeholder="Type your name"
+              className="input input-bordered w-full mt-1"
+            />
+          </label>
+
+          <label className="block">
+            <span className="label-text font-semibold">Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="Type your email"
+              className="input input-bordered w-full mt-1"
+            />
+          </label>
+
+          <label className="block">
+            <span className="label-text font-semibold">Password</span>
+            <input
+              type="password"
+              name="password"
+              placeholder="Type your password"
+              className="input input-bordered w-full mt-1"
+            />
+          </label>
+
+          <button className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-3xl font-bold">
+            Sign Up
+          </button>
+
+          <p className="text-center text-base-content">Or Sign In with</p>
+          {/* <SocialLogin /> */}
+
+          <p className="text-center text-base-content">
+            Already have an account?{" "}
+            <Link href="/login" className="font-bold underline">
+              Login
+            </Link>
+          </p>
+        </form>
+      </div>
+    </div>
   );
 }
