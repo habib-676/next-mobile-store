@@ -24,6 +24,13 @@ export default function Navbar() {
         <Link href="/products" className="hover:text-blue-600 transition">
           Products
         </Link>
+        <Link
+          href={`${status == "authenticated" ? "/add-product" : "/login"}`}
+          className="hover:text-blue-600 transition"
+        >
+          Add product
+        </Link>
+
         {status == "authenticated" ? (
           <button
             onClick={() => {
