@@ -9,7 +9,7 @@ export const registerUser = async (payload) => {
   const { name, email, password } = payload;
 
   if (!email || !password || !name) {
-    return { success: false };
+    return null;
   }
 
   const user = await usersCollection.findOne({ email: payload.email });
@@ -18,8 +18,9 @@ export const registerUser = async (payload) => {
     // hashing password
     const hashedPassword = await bcrypt.hash(password, 10);
     payload.password = hashedPassword;
-    const { acknowledged, insertedId } = usersCollection.insertOne(payload);
-    return { acknowledged, insertedId };
+    const result = await usersCollection.insertOne(payload);
+    result.insertedId = result.insertedId.toString();
+    return result;
   }
-  return { success: false };
+  return null;
 };
