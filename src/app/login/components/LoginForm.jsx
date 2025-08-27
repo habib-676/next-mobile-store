@@ -22,7 +22,7 @@ export default function LoginForm() {
       });
       if (response.ok) {
         toast.success("Logged In successfully");
-        router.push("/");
+        router.push("/products");
         form.reset();
       } else {
         toast.error("FAILED to Log In");

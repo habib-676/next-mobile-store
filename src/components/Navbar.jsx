@@ -1,7 +1,14 @@
+"use client";
+
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import React from "react";
+import toast from "react-hot-toast";
 
 export default function Navbar() {
+  const session = useSession();
+  console.log(session);
+  const { data, status } = session;
+
   return (
     <nav className="flex items-center justify-between px-6 py-4 shadow-md ">
       {/* Logo */}
@@ -17,9 +24,21 @@ export default function Navbar() {
         <Link href="/products" className="hover:text-blue-600 transition">
           Products
         </Link>
-        <Link href="/login" className="hover:text-blue-600 transition">
-          Login
-        </Link>
+        {status == "authenticated" ? (
+          <button
+            onClick={() => {
+              signOut();
+              toast.success("See you again...");
+            }}
+            className="hover:text-blue-600 cursor-pointer transition"
+          >
+            Logout
+          </button>
+        ) : (
+          <Link href="/login" className="hover:text-blue-600 transition">
+            Login
+          </Link>
+        )}
       </div>
     </nav>
   );

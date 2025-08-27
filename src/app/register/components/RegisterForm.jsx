@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { registerUser } from "@/app/actions/auth/registerUser";
+import toast from "react-hot-toast";
 export default function RegisterForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -10,6 +11,7 @@ export default function RegisterForm() {
     const email = form.email.value;
     const password = form.password.value;
     await registerUser({ name, email, password });
+    toast.success("Welcome! You are in now..");
   };
   return (
     <div className="flex items-center justify-center min-h-screen bg-base-100">
