@@ -10,7 +10,7 @@ export default function Navbar() {
   const { data, status } = session;
 
   return (
-    <nav className="flex items-center justify-between px-6 py-4 shadow-md ">
+    <nav className="flex items-center justify-between px-6 py-4 shadow-md bg-base-200 backdrop-blur-md fixed w-full z-50">
       {/* Logo */}
       <Link href="/" className="text-2xl font-bold text-blue-600">
         ProductApp
