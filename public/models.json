@@ -1,38 +1,68 @@
 [
   {
-    "series": "Samsung Galaxy S25",
-    "model": "Galaxy S25 (Base)",
-    "description": "Samsung's 2025 flagship standard model announced January 2025 with AI-powered Snapdragon 8 Elite chipset, 6.2-inch Dynamic LTPO AMOLED 2X display, 12 GB RAM.",
-    "price_bdt": 72000
-  },
-  {
-    "series": "Samsung Galaxy S25 Edge",
-    "model": "Galaxy S25 Edge",
-    "description": "Curved-screen variant of S25, 6.7-inch LTPO AMOLED 2X display, 12 GB RAM + 256 GB storage.",
-    "price_bdt": 100000
-  },
-  {
-    "series": "Samsung Galaxy S25 Ultra",
+    "brand": "Samsung",
     "model": "Galaxy S25 Ultra",
-    "description": "Ultra high-end variant with 6.9-inch QHD+ LTPO AMOLED 2X display, Snapdragon 8 Elite, quad rear cameras (200 MP + others).",
-    "price_bdt": 199999
+    "series": "Galaxy S",
+    "release_year": 2025,
+    "chip_set": "Snapdragon 8 Elite",
+    "display": "6.9-inch QHD+ AMOLED 2X",
+    "camera": "200MP quad camera",
+    "battery": "5000 mAh",
+    "price_bdt": 223999
   },
   {
-    "series": "Apple iPhone",
+    "brand": "Samsung",
+    "model": "Galaxy Z Fold7",
+    "series": "Galaxy Z Fold",
+    "release_year": 2025,
+    "chip_set": "Snapdragon 8 Elite",
+    "display": "8.0-inch Foldable AMOLED 120Hz",
+    "camera": "200MP triple camera",
+    "battery": "4400 mAh",
+    "price_bdt": 215000
+  },
+  {
+    "brand": "Apple",
     "model": "iPhone 17",
-    "description": "Upcoming iPhone 17 flagship, expected to launch September 2025, featuring A18 Pro chip and 48 MP rear camera system.",
+    "series": "iPhone",
+    "release_year": 2025,
+    "chip_set": "Apple A18",
+    "display": "6.1-inch LTPO OLED",
+    "camera": "48MP dual camera",
+    "battery": "3500 mAh (approx.)",
     "price_bdt": 130000
   },
   {
-    "series": "Apple iPhone",
-    "model": "iPhone 17 Pro Max",
-    "description": "Top-tier iPhone 17 series model, rumored Apple A19 Pro, 12 GB RAM, 48 MP triple cameras, reverse wireless charging support.",
-    "price_bdt": 190000
+    "brand": "Apple",
+    "model": "iPhone 16e",
+    "series": "iPhone",
+    "release_year": 2025,
+    "chip_set": "Apple A18",
+    "display": "6.1-inch OLED",
+    "camera": "48MP single camera",
+    "battery": "4005 mAh",
+    "price_bdt": 74000
   },
   {
-    "series": "Xiaomi",
+    "brand": "Xiaomi",
     "model": "Xiaomi 15 Ultra",
-    "description": "Flagship by Xiaomi released March 2025, Snapdragon 8 Elite, 6.73-inch QHD+ display, 16 GB RAM and quad-camera including 200 MP sensor.",
+    "series": "Xiaomi 15",
+    "release_year": 2025,
+    "chip_set": "Snapdragon 8 Elite",
+    "display": "6.73-inch QHD+ AMOLED",
+    "camera": "200MP quad camera",
+    "battery": "5410 mAh",
     "price_bdt": 165000
+  },
+  {
+    "brand": "Xiaomi",
+    "model": "Xiaomi 15S Pro",
+    "series": "Xiaomi 15",
+    "release_year": 2025,
+    "chip_set": "Snapdragon 8 Elite",
+    "display": "6.73-inch AMOLED 120Hz",
+    "camera": "50MP triple camera",
+    "battery": "6000 mAh",
+    "price_bdt": 160000
   }
 ]
