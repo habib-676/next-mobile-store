@@ -6,7 +6,7 @@ export const collectionNames = {
 };
 
 export default function dbConnect(collectionName) {
-  const uri = process.env.MONGO_URI;
+  const uri = process.env.NEXT_PUBLIC_MONGO_URI;
   const client = new MongoClient(uri, {
     serverApi: {
       version: ServerApiVersion.v1,

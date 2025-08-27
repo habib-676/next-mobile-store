@@ -6,8 +6,8 @@ export default async function page() {
   const mobileData = await mobilesCollection.find({}).toArray();
 
   return (
-    <div className="py-10 px-6">
-      <h1 className="text-3xl font-bold text-center mb-10">
+    <div className="py-20 px-6">
+      <h1 className="text-3xl font-bold text-center my-10">
         Latest Smartphones
       </h1>
 

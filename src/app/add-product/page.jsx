@@ -28,7 +28,7 @@ async function addProduct(formData) {
 
 export default function AddProduct() {
   return (
-    <div className="flex items-center justify-center min-h-screen my-8 px-4">
+    <div className="flex items-center justify-center min-h-screen pt-32 pb-8 px-4">
       <div className="w-full max-w-lg rounded-2xl bg-base-200 p-8 shadow-lg">
         <h1 className="text-2xl font-bold text-center mb-6">Add New Product</h1>
 
